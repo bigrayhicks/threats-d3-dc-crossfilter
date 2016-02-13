@@ -6,6 +6,16 @@ visualizations and MongoDB to store the back-end data.
 I'll jot down a list of dependencies or make a dockerfile available for building a 
 proper environment to run the application.
 
-First, run 'python generate_events.py' to load MongoDB with a few thousand threat events. Then
-you may run the application by running 'python app.py'. The web server runs via port 5000.
+![Threats](/images/threats.gif)
+
+## Running the Application
+
+First, inject some threat documents into MongoDB by executing the following:
+
+$ python generate_events.py
+
+Next, run the Flask application as follows (and the web server runs via port 5000):
+
+$ python app.py
+
 
