@@ -1,0 +1,30 @@
+#number-events-nd {
+    font-size: 60px;
+}
+
+.dc-chart g.row text {
+    fill: black;
+    font-size: 12px;
+}
+
+.dc-data-count {
+  float: right;
+  margin-top: -8px;
+  margin-right: 15px;
+}
+
+.dc-data-count .filter-count {
+  font-weight: bold;
+}
+
+.dc-data-count .total-count {
+  font-weight: bold;
+}
+
+p {
+  padding: 10px;
+}
+
+a {
+  padding: 8px;
+}

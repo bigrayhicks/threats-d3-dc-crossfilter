@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboards - Threats</title>
+  <link rel="stylesheet" href="./static/lib/css//bootstrap.min.css">
+  <link rel="stylesheet" href="./static/lib/css/keen-dashboards.css">
+  <link rel="stylesheet" href="./static/lib/css/dc.css">
+  <link rel="stylesheet" href="./static/css/custom.css">
+
+
+</head>
+<body class="application">
+
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="./">Threats Dashboard</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-sm-12">
+        <div class="row">
+
+          <!-- Event Selector Dropdown -->
+          <div class="col-sm-2">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Event Status Selector
+              </div>
+              <div class="chart-stage">
+                <div id="menu-select"></div>
+              </div>
+            </div>
+
+            <!-- Show Filtered Events, Reset All -->
+            <a href='javascript:dc.filterAll();dc.redrawAll();'>Reset All</a>
+          </div>
+
+          <!-- Total Events -->
+          <div class="col-sm-2">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Total Events
+              </div>
+              <div class="chart-stage">
+                <div id="number-events-nd"></div>
+              </div>
+            </div>
+            <div class="dc-data-count" id="row-selection">
+              <p>Showing <span class="filter-count">_</span> out of <span class="total-count">_</span> available events.</p>
+            </div>
+          </div>
+
+          <!-- Threats -->
+          <div class="col-sm-5">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Threats
+              </div>
+              <div class="chart-stage">
+                <div id="threats-row-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Threats -->
+
+          <!-- Protocols -->
+          <div class="col-sm-3">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Protocols
+              </div>
+              <div class="chart-stage">
+                <div id="protocol-pie"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Protocols -->
+
+        </div>
+      </div>
+
+      <div class="col-sm-12">
+        <div class="row">
+
+          <!-- Time Chart --> 
+          <div class="col-sm-12">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Number of Events
+              </div>
+              <div class="chart-stage">
+                <div id="time-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Time Chart --> 
+
+        </div>
+      </div>
+
+      <div class="col-sm-12">
+        <div class="row">
+
+          <!-- Top Subjects -->
+          <div class="col-sm-4">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Top Suspicious+ Email Subjects
+              </div>
+              <div class="chart-stage">
+                <div id="subject-row-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Top Subjects -->
+
+          <!-- Top User Agents -->
+          <div class="col-sm-4">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Top Suspicious+ User Agents
+              </div>
+              <div class="chart-stage">
+                <div id="user-agent-row-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Top User Agents -->
+
+          <!-- Top Hosts -->
+          <div class="col-sm-4">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Top Suspicious+ Hostnames
+              </div>
+              <div class="chart-stage">
+                <div id="hostname-row-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Top Hosts -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+    <hr>
+  </div>
+
+  <script src="./static/lib/js/jquery.min.js"></script>
+  <script src="./static/lib/js/bootstrap.min.js"></script>
+  <script src="./static/lib/js/crossfilter.js"></script>
+  <script src="./static/lib/js/d3.js"></script>
+  <script src="./static/lib/js/dc.js"></script>
+  <script src="./static/lib/js/queue.js"></script>
+
+
+  <script src="./static/lib/js/keen.min.js"></script>
+  <script src='./static/js/graphs.js' type='text/javascript'></script>
+</body>
+</html>
